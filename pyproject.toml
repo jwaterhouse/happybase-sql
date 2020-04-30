@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "happybase-sql"
+version = "0.1.0"
+readme = "README.md"
+homepage = "https://github.com/jwaterhouse/happybase-sql"
+repository = "https://github.com/jwaterhouse/happybase-sql"
+description = "A drop-in replacement for happybase that uses an SQL backend instead of HBase."
+authors = ["Jonathon Waterhouse <jonathon.waterhouse@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.5"
+sqlalchemy = "^1.3"
+psycopg2 = "^2.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
